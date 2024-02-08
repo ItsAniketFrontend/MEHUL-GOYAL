@@ -82,15 +82,11 @@ header a {
   overflow: hidden;
 }
 .about .right {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   height: 100%;
   padding: 20px 0px;
 }
 .about .left {
   height: 100%;
-  padding: 20px 0px;
 }
 .about .left .form_box {
   background-color: #000;
@@ -145,6 +141,7 @@ header a {
   font-size: 17px;
   color: #0a0a0a;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 .services {
@@ -154,7 +151,13 @@ header a {
   font-size: 116px;
   font-family: urbanist-bold;
   color: #0a0a0a;
+  width: 86%;
   font-style: normal;
+}
+@media (max-width: 992px) {
+  .services h2 {
+    width: 100%;
+  }
 }
 @media (max-width: 992px) {
   .services h2 {
@@ -163,6 +166,24 @@ header a {
     color: #0a0a0a;
     font-style: normal;
   }
+}
+.services button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 25px;
+  border-radius: 100px;
+  border: none;
+}
+.services button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: urbanist-semibold;
+  font-size: 17px;
+  text-transform: uppercase;
 }
 .services p {
   font-family: urbanist;

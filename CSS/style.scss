@@ -80,15 +80,14 @@ header a{
     padding: 40px 0px;
     overflow: hidden;
     .right{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        // display: flex;
+        // justify-content: center;
+        // flex-direction: column;
         height: 100%;
         padding: 20px 0px;
     }
     .left{
         height: 100%;
-        padding: 20px 0px;
         .form_box{
             background-color: #000;
             height: 100%;
@@ -141,6 +140,7 @@ header a{
             font-size: 17px;
             color: #0a0a0a;
             font-style: normal;
+            text-transform: uppercase;
         }
     }
 }
@@ -151,12 +151,32 @@ header a{
         font-size: 116px;
         font-family: urbanist-bold;
         color: #0a0a0a;
+        width: 86%;
+        @media (max-width:992px) {
+            width: 100%;
+        }
         font-style: normal;
         @media (max-width:992px) {
             font-size: 50px;
             font-family: urbanist-bold;
             color: #0a0a0a;
             font-style: normal;
+        }
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        background-color: #000;
+        color: #fff;
+        padding: 20px 25px;
+        border-radius: 100px;
+        border: none;
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-family: urbanist-semibold;
+            font-size: 17px;
+            text-transform: uppercase;
         }
     }
     p{
