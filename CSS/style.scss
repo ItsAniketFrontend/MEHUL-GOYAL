@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -29,45 +29,51 @@
     src: url(../Urbanist/Urbanist-Medium.ttf);
 }
 
-header.sticky nav{
+header.sticky nav {
     background-color: #000 !important;
 }
 
-header img{
+header img {
     height: 60px;
+
     @media (max-width:992px) {
         height: 40px;
     }
 }
 
-header.sticky nav a{
+header.sticky nav a {
     color: #fff !important;
     font-family: urbanist-semibold;
     font-size: 17px;
 }
 
-header a{
+header a {
     color: #ffffff !important;
     font-family: urbanist-semibold;
     font-size: 17px;
 }
 
-.hero-section{
-    .slide{
+.hero-section {
+    .slide {
         height: 680px;
-        object-fit: cover; 
+        object-fit: cover;
+
         @media (max-width:992px) {
             height: 300px;
-        }  
+        }
+
         @media (max-width:450px) {
             height: 250px;
         }
-        .carousel-inner{
+
+        .carousel-inner {
             height: 100%;
-            .carousel-item{
+
+            .carousel-item {
                 height: 100%;
                 object-fit: cover;
-                img{
+
+                img {
                     width: 100%;
                     height: auto;
                 }
@@ -76,66 +82,79 @@ header a{
     }
 }
 
-.about{
+.about {
     padding: 40px 0px;
     overflow: hidden;
-    .right{
+
+    .right {
         // display: flex;
         // justify-content: center;
         // flex-direction: column;
         height: 100%;
         padding: 20px 0px;
     }
-    .left{
+
+    .left {
         height: 100%;
-        .form_box{
+
+        .form_box {
             background-color: #000;
             height: 100%;
             padding: 20px 0px;
             display: flex;
             justify-content: center;
             flex-direction: column;
-            h2{
+
+            h2 {
                 text-align: center;
                 color: #fff;
                 font-family: urbanist-medium;
             }
-            button{
+
+            button {
                 background-color: #ffffff;
-                a{
+
+                a {
                     color: #000;
                 }
             }
-            option{
+
+            option {
                 font-family: urbanist-medium;
             }
         }
     }
-    .col-box{
+
+    .col-box {
         margin: 0px 5px;
-        button{
+
+        button {
             background: #000;
             padding: 4px 22px;
             border: none;
             width: fit-content;
-            a{
+
+            a {
                 font-family: urbanist-semibold;
                 font-size: 17px;
                 color: #fff;
                 text-decoration: none;
             }
         }
-        h1{
+
+        h1 {
             font-family: urbanist-bold;
             font-size: 32px;
             text-transform: uppercase;
             color: #0a0a0a;
         }
-        h3{
+
+        h3 {
             font-family: urbanist-medium;
             font-size: 24px;
         }
-        p{
+
+        p {
             font-family: urbanist;
             font-size: 17px;
             color: #0a0a0a;
@@ -145,17 +164,21 @@ header a{
     }
 }
 
-.services{
+.services {
     padding-bottom: 40px;
-    h2{
+
+    h2 {
         font-size: 116px;
         font-family: urbanist-bold;
         color: #0a0a0a;
         width: 86%;
+
         @media (max-width:992px) {
             width: 100%;
         }
+
         font-style: normal;
+
         @media (max-width:992px) {
             font-size: 50px;
             font-family: urbanist-bold;
@@ -163,7 +186,8 @@ header a{
             font-style: normal;
         }
     }
-    button{
+
+    button {
         width: fit-content;
         height: fit-content;
         background-color: #000;
@@ -171,7 +195,8 @@ header a{
         padding: 20px 25px;
         border-radius: 100px;
         border: none;
-        a{
+
+        a {
             text-decoration: none;
             color: #fff;
             font-family: urbanist-semibold;
@@ -179,14 +204,15 @@ header a{
             text-transform: uppercase;
         }
     }
-    p{
+
+    p {
         font-family: urbanist;
         font-size: 17px;
         font-style: normal;
     }
 }
 
-.contact{
+.contact {
     min-height: 365px;
     background-image: url(../Images/contact.jpg);
     background-position: center;
@@ -197,7 +223,8 @@ header a{
     align-items: center;
     flex-direction: column;
     position: relative;
-    .overlay{
+
+    .overlay {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -206,29 +233,33 @@ header a{
         background-color: #0000006E;
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     }
-    h2{
+
+    h2 {
         font-family: urbanist-semibold;
         font-size: 72px;
         font-style: normal;
         color: #fff;
         font-weight: 600;
         z-index: 30000;
+
         @media (max-width:666px) {
             font-family: urbanist-semibold;
-        font-size: 52px;
-        font-style: normal;
-        color: #fff;
-        font-weight: 600;
-        z-index: 30000;
-        padding: 0px 20px;
+            font-size: 52px;
+            font-style: normal;
+            color: #fff;
+            font-weight: 600;
+            z-index: 30000;
+            padding: 0px 20px;
         }
     }
-    .hello{
+
+    .hello {
         padding: 20px 30px;
         overflow: hidden;
     }
-    .contain{
-        span{
+
+    .contain {
+        span {
             font-family: urbanist;
             font-size: 36px;
             color: #fff;
@@ -236,11 +267,13 @@ header a{
             position: relative;
             font-style: normal;
         }
-        .text{
+
+        .text {
             position: relative;
             overflow: hidden;
         }
-        .sec-text::before{
+
+        .sec-text::before {
             position: absolute;
             content: "";
             top: 0;
@@ -250,23 +283,28 @@ header a{
             background-color: transparent;
             animation: animate 2s steps(8) infinite;
         }
+
         @keyframes animate {
-            40%, 60%{
+
+            40%,
+            60% {
                 left: 100%;
             }
-            
-            100%{
+
+            100% {
                 left: 0%;
             }
         }
-    } 
-    button{
+    }
+
+    button {
         padding: 10px 20px;
         border-radius: 50px;
         background-color: transparent !important;
         border: 1px solid #fff;
         z-index: 5000;
-        a{
+
+        a {
             text-decoration: none;
             color: #fff;
             font-family: urbanist-bold;
