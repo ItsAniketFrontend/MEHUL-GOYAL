@@ -1,0 +1,233 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: urbanist;
+  src: url(../Urbanist/Urbanist-Regular.ttf);
+}
+@font-face {
+  font-family: urbanist-bold;
+  src: url(../Urbanist/Urbanist-Bold.ttf);
+}
+@font-face {
+  font-family: urbanist-semibold;
+  src: url(../Urbanist/Urbanist-SemiBold.ttf);
+}
+@font-face {
+  font-family: jost;
+  src: url(../Jost/Jost-Regular.ttf);
+}
+@font-face {
+  font-family: urbanist-medium;
+  src: url(../Urbanist/Urbanist-Medium.ttf);
+}
+header.sticky nav {
+  background-color: #000 !important;
+}
+
+header img {
+  height: 60px;
+}
+@media (max-width: 992px) {
+  header img {
+    height: 40px;
+  }
+}
+
+header.sticky nav a {
+  color: #fff !important;
+  font-family: urbanist-semibold;
+  font-size: 17px;
+}
+
+header a {
+  color: #ffffff !important;
+  font-family: urbanist-semibold;
+  font-size: 17px;
+}
+
+.hero-section .slide {
+  height: 680px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 992px) {
+  .hero-section .slide {
+    height: 300px;
+  }
+}
+@media (max-width: 450px) {
+  .hero-section .slide {
+    height: 250px;
+  }
+}
+.hero-section .slide .carousel-inner {
+  height: 100%;
+}
+.hero-section .slide .carousel-inner .carousel-item {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-section .slide .carousel-inner .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  padding: 40px 0px;
+  overflow: hidden;
+}
+.about .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 0px;
+}
+.about .left {
+  height: 100%;
+  padding: 20px 0px;
+}
+.about .left .form_box {
+  background-color: #000;
+  height: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.about .left .form_box h2 {
+  text-align: center;
+  color: #fff;
+  font-family: urbanist-medium;
+}
+.about .left .form_box button {
+  background-color: #ffffff;
+}
+.about .left .form_box button a {
+  color: #000;
+}
+.about .left .form_box option {
+  font-family: urbanist-medium;
+}
+.about .col-box {
+  margin: 0px 5px;
+}
+.about .col-box button {
+  background: #000;
+  padding: 4px 22px;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.about .col-box button a {
+  font-family: urbanist-semibold;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+}
+.about .col-box h1 {
+  font-family: urbanist-bold;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #0a0a0a;
+}
+.about .col-box h3 {
+  font-family: urbanist-medium;
+  font-size: 24px;
+}
+.about .col-box p {
+  font-family: urbanist;
+  font-size: 17px;
+  color: #0a0a0a;
+  font-style: normal;
+}
+
+.services {
+  padding-bottom: 40px;
+}
+.services h2 {
+  font-size: 116px;
+  font-family: urbanist-bold;
+  color: #0a0a0a;
+  font-style: normal;
+}
+@media (max-width: 992px) {
+  .services h2 {
+    font-size: 50px;
+    font-family: urbanist-bold;
+    color: #0a0a0a;
+    font-style: normal;
+  }
+}
+.services p {
+  font-family: urbanist;
+  font-size: 17px;
+  font-style: normal;
+}
+
+.contact {
+  min-height: 365px;
+  background-image: url(../Images/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.contact .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.431372549);
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.contact h2 {
+  font-family: urbanist-semibold;
+  font-size: 72px;
+  font-style: normal;
+  color: #fff;
+  font-weight: 600;
+  z-index: 30000;
+}
+@media (max-width: 666px) {
+  .contact h2 {
+    font-family: urbanist-semibold;
+    font-size: 52px;
+    font-style: normal;
+    color: #fff;
+    font-weight: 600;
+    z-index: 30000;
+    padding: 0px 20px;
+  }
+}
+.contact p {
+  font-family: urbanist;
+  font-size: 36px;
+  color: #fff;
+  z-index: 300;
+  font-style: normal;
+}
+.contact button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  z-index: 5000;
+}
+.contact button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: urbanist-bold;
+  z-index: 4000;
+  font-size: 17px;
+}/*# sourceMappingURL=style.css.map */
