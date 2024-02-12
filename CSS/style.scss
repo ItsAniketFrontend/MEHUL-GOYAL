@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: bebas-neu;
+    src: url(../Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
     font-family: urbanist;
     src: url(../Urbanist/Urbanist-Regular.ttf);
 }
@@ -233,6 +238,7 @@ header a {
         height: 80vh;
         display: flex;
         cursor: pointer;
+
         @media (max-width:772px) {
             flex-direction: column;
         }
@@ -285,9 +291,11 @@ header a {
         font-family: "Century Gothic";
         white-space: nowrap;
         transform: rotate(-90deg);
+
         @media (max-width:776px) {
             transform: rotate(0deg);
         }
+
         transform-origin: 0 0;
         transition: all 0.3s;
     }
@@ -306,6 +314,7 @@ header a {
         border: 2px solid #222;
         color: #fff;
     }
+
 }
 
 .contact {
