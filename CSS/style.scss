@@ -34,7 +34,7 @@
     src: url(../Urbanist/Urbanist-Medium.ttf);
 }
 
-header {}
+
 
 header.sticky nav {
     background-color: #000 !important;
@@ -71,7 +71,7 @@ header a {
         }
 
         @media (max-width:450px) {
-            height: 250px;
+            height: 500px;
         }
 
         .carousel-inner {
@@ -85,7 +85,7 @@ header a {
                     width: 100%;
                     animation: imagezoom 20s;
                     transform-origin: 0 50%;
-                    height: auto;
+                    height: 100%;
                 }
             }
         }
