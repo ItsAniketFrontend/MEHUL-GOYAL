@@ -75,7 +75,17 @@ header a {
 }
 .hero-section .slide .carousel-inner .carousel-item img {
   width: 100%;
+  animation: imagezoom 20s;
+  transform-origin: 0 50%;
   height: auto;
+}
+@keyframes imagezoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 
 .about {
@@ -168,7 +178,7 @@ header a {
     font-style: normal;
   }
 }
-.services button {
+.services .know button {
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
@@ -179,7 +189,7 @@ header a {
   border-radius: 100px;
   border: none;
 }
-.services button a {
+.services .know button a {
   text-decoration: none;
   color: #fff;
   font-family: urbanist-semibold;
@@ -191,10 +201,82 @@ header a {
   font-size: 17px;
   font-style: normal;
 }
+.services .img-accordion {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  cursor: pointer;
+}
+@media (max-width: 772px) {
+  .services .img-accordion {
+    flex-direction: column;
+  }
+}
+.services .img {
+  flex: 1;
+  height: 100%;
+  border: 1px solid #222;
+  margin: 0 2px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: all 0.3s;
+}
+@media (max-width: 772px) {
+  .services .img {
+    margin: 10px 0px;
+  }
+}
+.services .img1 {
+  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/Architecture-commercial.png?updatedAt=1707736955996");
+}
+.services .img2 {
+  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/hotel.png?updatedAt=1707739196822");
+}
+.services .img3 {
+  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/interior-residential.png?updatedAt=1707739333998");
+}
+.services .img4 {
+  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/Library.png?updatedAt=1707729573802");
+}
+.services .img5 {
+  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/theatre.png?updatedAt=1707729573827");
+}
+.services .img p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Century Gothic";
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+}
+@media (max-width: 776px) {
+  .services .img p {
+    transform: rotate(0deg);
+  }
+}
+.services .img-accordion:hover .img {
+  transform: skew(0);
+}
+.services .img:hover {
+  flex: 5;
+}
+.services .img:hover p {
+  transform: rotate(0);
+  background-color: #000;
+  border: 2px solid #222;
+  color: #fff;
+}
 
 .contact {
   min-height: 365px;
-  background-image: url(../Images/contact.jpg);
+  background-image: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact.jpg?updatedAt=1707729571086);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
