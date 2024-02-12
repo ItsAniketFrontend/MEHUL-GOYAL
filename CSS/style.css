@@ -26,6 +26,7 @@
 }
 header.sticky nav {
   background-color: #000 !important;
+  z-index: 300000 !important;
 }
 
 header img {
@@ -89,7 +90,7 @@ header a {
   height: 100%;
 }
 .about .left .form_box {
-  background-color: #000;
+  background-color: #828385;
   height: 100%;
   padding: 20px 0px;
   display: flex;
@@ -148,7 +149,7 @@ header a {
   padding-bottom: 40px;
 }
 .services h2 {
-  font-size: 116px;
+  font-size: 88px;
   font-family: urbanist-bold;
   color: #0a0a0a;
   width: 86%;
@@ -234,6 +235,9 @@ header a {
 .contact .hello {
   padding: 20px 30px;
   overflow: hidden;
+}
+.contact .contain {
+  text-align: center;
 }
 .contact .contain span {
   font-family: urbanist;

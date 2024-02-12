@@ -29,8 +29,13 @@
     src: url(../Urbanist/Urbanist-Medium.ttf);
 }
 
+header{
+    
+}
+
 header.sticky nav {
     background-color: #000 !important;
+    z-index: 300000 !important;
 }
 
 header img {
@@ -98,7 +103,7 @@ header a {
         height: 100%;
 
         .form_box {
-            background-color: #000;
+            background-color: #828385;
             height: 100%;
             padding: 20px 0px;
             display: flex;
@@ -168,7 +173,7 @@ header a {
     padding-bottom: 40px;
 
     h2 {
-        font-size: 116px;
+        font-size: 88px;
         font-family: urbanist-bold;
         color: #0a0a0a;
         width: 86%;
@@ -259,6 +264,7 @@ header a {
     }
 
     .contain {
+        text-align: center;
         span {
             font-family: urbanist;
             font-size: 36px;
