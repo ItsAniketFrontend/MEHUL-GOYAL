@@ -496,7 +496,7 @@ header a {
 .sub-foot {
   padding: 100px 0px;
   background-color: #ffffff;
-  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact_bg.jpg?updatedAt=1707806137882);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact_bg.jpg?updatedAt=1707806137882);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -507,7 +507,7 @@ header a {
   position: relative;
 }
 .sub-foot h2 {
-  color: #000;
+  color: #fff;
   font-family: urbanist;
   text-transform: uppercase;
   font-size: 40px;
@@ -519,7 +519,7 @@ header a {
 }
 .sub-foot li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-family: jost;
   font-size: 18px;
   text-transform: capitalize;
@@ -527,14 +527,14 @@ header a {
 }
 .sub-foot p {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-family: jost;
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 800;
 }
 .sub-foot p span {
-  color: #000;
+  color: #fff;
   font-family: jost;
   font-size: 18px;
   text-transform: capitalize;
