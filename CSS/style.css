@@ -99,6 +99,7 @@ header a {
     bottom: 0%;
     left: 0%;
     padding: 10px;
+    font-size: 30px;
   }
 }
 @keyframes imagezoom {
@@ -186,24 +187,28 @@ header a {
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .servi .interior {
   background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/interior-design.jpg?updatedAt=1707804013394);
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .servi .landscape {
   background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/landscape.jpg?updatedAt=1707804013759);
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .servi .management {
   background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/project-management.jpg?updatedAt=1707804013058);
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .servi .col-box {
   height: 100%;

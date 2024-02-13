@@ -94,12 +94,14 @@ header a {
                     left: 50%;
                     background-color: #000;
                     padding: 50px;
+                    font-size: 42px;
                     @media (max-width:792px) {
                         bottom: 0%;
                         left: 0%; 
                         padding: 10px;
+                        font-size: 30px;
                     }
-                    font-size: 42px;
+                    
                     color: #fff;
                     text-transform: uppercase;
                     font-family: urbanist-semibold;
@@ -210,6 +212,7 @@ header a {
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .interior {
@@ -217,6 +220,7 @@ header a {
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .landscape {
@@ -224,6 +228,7 @@ header a {
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .management {
@@ -231,6 +236,7 @@ header a {
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .col-box {
