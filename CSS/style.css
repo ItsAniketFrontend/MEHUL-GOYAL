@@ -219,7 +219,7 @@ header a {
 .services .img {
   flex: 1;
   height: 100%;
-  border: 1px solid #222;
+  border: 3px solid #000;
   margin: 0 2px;
   background-size: cover;
   background-position: center;
@@ -306,6 +306,7 @@ header a {
   color: #fff;
   font-weight: 600;
   z-index: 30000;
+  text-align: center;
 }
 @media (max-width: 666px) {
   .contact h2 {
@@ -368,4 +369,65 @@ header a {
   font-family: urbanist-bold;
   z-index: 4000;
   font-size: 17px;
+}
+
+.slider {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/service-3d.jpg?updatedAt=1707800455355);
+  position: relative;
+}
+.slider .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, rgba(10, 10, 10, 0.568627451) 100%, rgba(242, 41, 91, 0) 39%);
+  opacity: 0.77;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.slider .text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.slider .text-wrapper h1 {
+  font-size: 88px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 3px;
+  -webkit-text-stroke-color: #fff;
+  white-space: nowrap;
+  padding: 0 6rem;
+  letter-spacing: 1px;
+  animation: move-rtl 6000ms linear infinite;
+}
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.foot {
+  background-color: #fff;
+  padding: 20px 0px;
+}
+.foot h2 {
+  text-align: center;
+  font-family: jost;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #0a0a0a;
+  font-weight: 100;
+  font-size: 22px;
 }/*# sourceMappingURL=style.css.map */
