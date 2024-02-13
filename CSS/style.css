@@ -81,6 +81,22 @@ header a {
   width: 100%;
   animation: imagezoom 20s;
   height: 100%;
+  position: relative;
+}
+.hero-section .slide .carousel-inner .carousel-item h2 {
+  position: absolute;
+  bottom: 300px;
+  left: 200px;
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: urbanist-semibold;
+}
+@media (max-width: 792px) {
+  .hero-section .slide .carousel-inner .carousel-item h2 {
+    bottom: 100px;
+    left: 40px;
+  }
 }
 @keyframes imagezoom {
   0% {
@@ -473,7 +489,15 @@ header a {
   /* Adjust width as needed */
   overflow: hidden;
 }
-.slider .slider-container marquee {
+.slider .slider-container .containero {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.slider .slider-container .loop-text {
   font-size: 88px;
   text-transform: uppercase;
   color: transparent;
@@ -482,6 +506,17 @@ header a {
   white-space: nowrap;
   padding: 0 6rem;
   letter-spacing: 1px;
+}
+.slider .slider-container .loop-text {
+  animation: loopText 10s infinite linear;
+}
+@keyframes loopText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .sub-foot {
