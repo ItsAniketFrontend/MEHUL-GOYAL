@@ -468,12 +468,12 @@ header a {
   opacity: 0.77;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
-.slider .text-wrapper {
-  display: flex;
-  justify-content: flex-start;
+.slider .slider-container {
+  width: 100%;
+  /* Adjust width as needed */
   overflow: hidden;
 }
-.slider .text-wrapper h1 {
+.slider .slider-container marquee {
   font-size: 88px;
   text-transform: uppercase;
   color: transparent;
@@ -482,15 +482,6 @@ header a {
   white-space: nowrap;
   padding: 0 6rem;
   letter-spacing: 1px;
-  animation: move-rtl 6000ms linear infinite;
-}
-@keyframes move-rtl {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 .sub-foot {

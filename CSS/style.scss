@@ -103,7 +103,7 @@ header a {
 }
 
 .about {
-   padding-top: 40px;
+    padding-top: 40px;
     overflow: hidden;
 
     .right {
@@ -184,40 +184,46 @@ header a {
     }
 }
 
-.servi{
+.servi {
     overflow: hidden;
     padding: 0px 0px;
-    .architect{
+
+    .architect {
         background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/architect.jpg?updatedAt=1707804013781);
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .interior{
+
+    .interior {
         background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/interior-design.jpg?updatedAt=1707804013394);
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .landscape{
+
+    .landscape {
         background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/landscape.jpg?updatedAt=1707804013759);
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .management{
+
+    .management {
         background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/project-management.jpg?updatedAt=1707804013058);
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .col-box{
+
+    .col-box {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        span{
+
+        span {
             font-family: urbanist;
             font-size: 56px;
             text-transform: uppercase;
@@ -360,10 +366,11 @@ header a {
 
 }
 
-.key-points{
+.key-points {
     padding: 60px 0px;
     background-color: #fff;
-    span{
+
+    span {
         font-family: bebas-neu;
         text-transform: uppercase;
         font-size: 136px;
@@ -371,9 +378,10 @@ header a {
         color: #000;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #000;
-        color: transparent!important;
+        color: transparent !important;
     }
-    p{
+
+    p {
         font-size: 20px;
         font-family: urbanist;
         font-weight: bold;
@@ -381,7 +389,8 @@ header a {
         font-style: normal;
         line-height: 28px;
     }
-    .line{
+
+    .line {
         border: 1px solid #c5ad85 !important;
         background-color: #c5ad85 !important;
         color: #c5ad85 !important;
@@ -418,7 +427,7 @@ header a {
         color: #fff;
         font-weight: 600;
         z-index: 30000;
-        text-align:center ;
+        text-align: center;
 
         @media (max-width:666px) {
             font-family: urbanist-semibold;
@@ -494,11 +503,13 @@ header a {
     }
 }
 
-.slider{
+.slider {
     min-height: 350px;
+
     @media (max-width:546px) {
         min-height: 250px;
     }
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -507,7 +518,8 @@ header a {
     background-size: cover;
     background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/service-3d.jpg?updatedAt=1707800455355);
     position: relative;
-    .overlay{
+
+    .overlay {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -518,11 +530,36 @@ header a {
         opacity: 0.77;
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     }
-    .text-wrapper{
-        display: flex;
-        justify-content: flex-start;
+
+    .slider-container {
+        width: 100%;
+        /* Adjust width as needed */
         overflow: hidden;
-        h1{
+        // .text-wrapper{
+        //     display: flex;
+        //     animation: slide 10s linear infinite; 
+        //     h1{
+        //         font-size: 88px;
+        //         text-transform: uppercase;
+        //         color: transparent;
+        //         -webkit-text-stroke: 3px;
+        //         -webkit-text-stroke-color: #fff;
+        //         white-space: nowrap;
+        //         padding: 0 6rem;
+        //         letter-spacing: 1px;
+        //         animation: slide 5s linear infinite;
+        //         @keyframes slide {
+        //             0% {
+        //               transform: translateX(0%);
+        //             }
+        //             100% {
+        //               transform: translateX(-100%);
+        //             }
+        //           }
+        //     }
+
+        // }
+        marquee {
             font-size: 88px;
             text-transform: uppercase;
             color: transparent;
@@ -531,43 +568,38 @@ header a {
             white-space: nowrap;
             padding: 0 6rem;
             letter-spacing: 1px;
-            animation: move-rtl 6000ms linear infinite;
-            @keyframes move-rtl{
-                0%{
-                    transform: translateX(0);
-                }
-                100%{
-                    transform: translateX(-100%);
-                }
-            }
         }
-        
     }
+
 }
 
-.sub-foot{
+.sub-foot {
     padding: 100px 0px;
     background-color: #ffffff;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,.8)),url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact_bg.jpg?updatedAt=1707806137882);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .8)), url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact_bg.jpg?updatedAt=1707806137882);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 0.40;
-    .col-lg-4{
+
+    .col-lg-4 {
         z-index: 9999999;
         position: relative;
     }
-    h2{
+
+    h2 {
         color: #fff;
         font-family: urbanist;
         text-transform: uppercase;
         font-size: 40px;
         font-weight: 800;
     }
-    li{
+
+    li {
         list-style: none;
         padding: 10px 0px;
-        a{
+
+        a {
             text-decoration: none;
             color: #fff;
             font-family: jost;
@@ -576,27 +608,30 @@ header a {
             font-weight: 800;
         }
     }
-    p{
+
+    p {
         text-decoration: none;
         color: #fff;
         font-family: jost;
         font-size: 18px;
-        text-transform: capitalize; 
+        text-transform: capitalize;
         font-weight: 800;
-        span{
+
+        span {
             color: #fff;
             font-family: jost;
             font-size: 18px;
-            text-transform: capitalize; 
+            text-transform: capitalize;
             padding-right: 14px;
         }
     }
 }
 
-.foot{
+.foot {
     background-color: #fff;
     padding: 20px 0px;
-    h2{
+
+    h2 {
         text-align: center;
         font-family: jost;
         text-transform: uppercase;
