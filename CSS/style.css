@@ -29,7 +29,7 @@
   src: url(../Urbanist/Urbanist-Medium.ttf);
 }
 header.sticky nav {
-  background-color: #000 !important;
+  background-color: #c5ad85 !important;
   z-index: 300000 !important;
 }
 
@@ -55,7 +55,7 @@ header a {
 }
 
 .hero-section .slide {
-  height: 680px;
+  height: 650px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -66,7 +66,7 @@ header a {
 }
 @media (max-width: 450px) {
   .hero-section .slide {
-    height: 500px;
+    height: 400px;
   }
 }
 .hero-section .slide .carousel-inner {
@@ -80,7 +80,6 @@ header a {
 .hero-section .slide .carousel-inner .carousel-item img {
   width: 100%;
   animation: imagezoom 20s;
-  transform-origin: 0 50%;
   height: 100%;
 }
 @keyframes imagezoom {
@@ -93,7 +92,7 @@ header a {
 }
 
 .about {
-  padding: 40px 0px;
+  padding-top: 40px;
   overflow: hidden;
 }
 .about .right {
@@ -117,10 +116,10 @@ header a {
   font-family: urbanist-medium;
 }
 .about .left .form_box button {
-  background-color: #ffffff;
+  background-color: #c5ad85;
 }
 .about .left .form_box button a {
-  color: #000;
+  color: #fff;
 }
 .about .left .form_box option {
   font-family: urbanist-medium;
@@ -129,7 +128,7 @@ header a {
   margin: 0px 5px;
 }
 .about .col-box button {
-  background: #000;
+  background: #c5ad85;
   padding: 4px 22px;
   border: none;
   width: -moz-fit-content;
@@ -157,6 +156,48 @@ header a {
   color: #0a0a0a;
   font-style: normal;
   text-transform: uppercase;
+}
+
+.servi {
+  overflow: hidden;
+  padding: 0px 0px;
+}
+.servi .architect {
+  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/architect.jpg?updatedAt=1707804013781);
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.servi .interior {
+  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/interior-design.jpg?updatedAt=1707804013394);
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.servi .landscape {
+  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/landscape.jpg?updatedAt=1707804013759);
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.servi .management {
+  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/project-management.jpg?updatedAt=1707804013058);
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.servi .col-box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.servi .col-box span {
+  font-family: urbanist;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: #ffffff !important;
 }
 
 .services {
@@ -187,7 +228,7 @@ header a {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #000;
+  background-color: #c5ad85;
   color: #fff;
   padding: 20px 25px;
   border-radius: 100px;
@@ -250,7 +291,7 @@ header a {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #c5ad85;
   padding: 10px;
   color: #fff;
   text-transform: uppercase;
@@ -273,9 +314,38 @@ header a {
 }
 .services .img:hover p {
   transform: rotate(0);
-  background-color: #000;
+  background-color: #c5ad85;
   border: 2px solid #222;
   color: #fff;
+}
+
+.key-points {
+  padding: 60px 0px;
+  background-color: #828385;
+}
+.key-points span {
+  font-family: bebas-neu;
+  text-transform: uppercase;
+  font-size: 136px;
+  font-weight: 500;
+  color: #fff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent !important;
+}
+.key-points p {
+  font-size: 20px;
+  font-family: urbanist;
+  font-weight: 500;
+  color: #fff;
+  font-style: normal;
+  line-height: 28px;
+}
+.key-points .line {
+  border: 1px solid #fff !important;
+  background-color: #fff !important;
+  color: #fff !important;
+  opacity: unset;
 }
 
 .contact {
@@ -372,7 +442,7 @@ header a {
 }
 
 .slider {
-  min-height: 500px;
+  min-height: 350px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -416,6 +486,45 @@ header a {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.sub-foot {
+  padding: 100px 0px;
+  background-color: #c5ad85;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.sub-foot h2 {
+  color: #ffffff;
+  font-family: urbanist;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.sub-foot li {
+  list-style: none;
+  padding: 10px 0px;
+}
+.sub-foot li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: jost;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.sub-foot p {
+  text-decoration: none;
+  color: #fff;
+  font-family: jost;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.sub-foot p span {
+  color: #fff;
+  font-family: jost;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding-right: 14px;
 }
 
 .foot {
