@@ -321,16 +321,16 @@ header a {
 
 .key-points {
   padding: 60px 0px;
-  background-color: #828385;
+  background-color: #fff;
 }
 .key-points span {
   font-family: bebas-neu;
   text-transform: uppercase;
   font-size: 136px;
   font-weight: 500;
-  color: #fff;
+  color: #000;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #000;
   color: transparent !important;
 }
 .key-points p {
