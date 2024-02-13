@@ -66,7 +66,7 @@ header a {
 }
 @media (max-width: 450px) {
   .hero-section .slide {
-    height: 400px;
+    height: 350px;
   }
 }
 .hero-section .slide .carousel-inner {
@@ -336,15 +336,15 @@ header a {
 .key-points p {
   font-size: 20px;
   font-family: urbanist;
-  font-weight: 500;
-  color: #fff;
+  font-weight: bold;
+  color: #c5ad85;
   font-style: normal;
   line-height: 28px;
 }
 .key-points .line {
-  border: 1px solid #fff !important;
-  background-color: #fff !important;
-  color: #fff !important;
+  border: 1px solid #c5ad85 !important;
+  background-color: #c5ad85 !important;
+  color: #c5ad85 !important;
   opacity: unset;
 }
 
@@ -452,6 +452,11 @@ header a {
   background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/service-3d.jpg?updatedAt=1707800455355);
   position: relative;
 }
+@media (max-width: 546px) {
+  .slider {
+    min-height: 250px;
+  }
+}
 .slider .overlay {
   position: absolute;
   width: 100%;
@@ -490,16 +495,23 @@ header a {
 
 .sub-foot {
   padding: 100px 0px;
-  background-color: #c5ad85;
+  background-color: #ffffff;
+  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact_bg.jpg?updatedAt=1707806137882);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  opacity: 0.4;
+}
+.sub-foot .col-lg-4 {
+  z-index: 9999999;
+  position: relative;
 }
 .sub-foot h2 {
-  color: #ffffff;
+  color: #000;
   font-family: urbanist;
   text-transform: uppercase;
   font-size: 40px;
+  font-weight: 800;
 }
 .sub-foot li {
   list-style: none;
@@ -507,20 +519,22 @@ header a {
 }
 .sub-foot li a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-family: jost;
   font-size: 18px;
   text-transform: capitalize;
+  font-weight: 800;
 }
 .sub-foot p {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-family: jost;
   font-size: 18px;
   text-transform: capitalize;
+  font-weight: 800;
 }
 .sub-foot p span {
-  color: #fff;
+  color: #000;
   font-family: jost;
   font-size: 18px;
   text-transform: capitalize;

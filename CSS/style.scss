@@ -71,7 +71,7 @@ header a {
         }
 
         @media (max-width:450px) {
-            height: 400px;
+            height: 350px;
         }
 
         .carousel-inner {
@@ -376,15 +376,15 @@ header a {
     p{
         font-size: 20px;
         font-family: urbanist;
-        font-weight: 500;
-        color: #fff;
+        font-weight: bold;
+        color: #c5ad85;
         font-style: normal;
         line-height: 28px;
     }
     .line{
-        border: 1px solid #fff !important;
-        background-color: #fff !important;
-        color: #fff !important;
+        border: 1px solid #c5ad85 !important;
+        background-color: #c5ad85 !important;
+        color: #c5ad85 !important;
         opacity: unset;
     }
 }
@@ -496,6 +496,9 @@ header a {
 
 .slider{
     min-height: 350px;
+    @media (max-width:546px) {
+        min-height: 250px;
+    }
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -544,36 +547,44 @@ header a {
 
 .sub-foot{
     padding: 100px 0px;
-    background-color: #c5ad85;
-    // background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%),url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact_bg.jpg?updatedAt=1707806137882);
+    background-color: #ffffff;
+    background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact_bg.jpg?updatedAt=1707806137882);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    opacity: 0.40;
+    .col-lg-4{
+        z-index: 9999999;
+        position: relative;
+    }
     h2{
-        color: #ffffff;
+        color: #000;
         font-family: urbanist;
         text-transform: uppercase;
         font-size: 40px;
+        font-weight: 800;
     }
     li{
         list-style: none;
         padding: 10px 0px;
         a{
             text-decoration: none;
-            color: #fff;
+            color: #000;
             font-family: jost;
             font-size: 18px;
             text-transform: capitalize;
+            font-weight: 800;
         }
     }
     p{
         text-decoration: none;
-        color: #fff;
+        color: #000;
         font-family: jost;
         font-size: 18px;
         text-transform: capitalize; 
+        font-weight: 800;
         span{
-            color: #fff;
+            color: #000;
             font-family: jost;
             font-size: 18px;
             text-transform: capitalize; 
