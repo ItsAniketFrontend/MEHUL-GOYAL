@@ -85,17 +85,20 @@ header a {
 }
 .hero-section .slide .carousel-inner .carousel-item h2 {
   position: absolute;
-  bottom: 300px;
-  left: 200px;
-  font-size: 32px;
+  bottom: 40%;
+  left: 50%;
+  background-color: #000;
+  padding: 50px;
+  font-size: 42px;
   color: #fff;
   text-transform: uppercase;
   font-family: urbanist-semibold;
 }
 @media (max-width: 792px) {
   .hero-section .slide .carousel-inner .carousel-item h2 {
-    bottom: 100px;
-    left: 40px;
+    bottom: 0%;
+    left: 0%;
+    padding: 10px;
   }
 }
 @keyframes imagezoom {

@@ -90,13 +90,16 @@ header a {
                 }
                 h2{
                     position: absolute;
-                    bottom: 300px;
-                    left: 200px;
+                    bottom: 40%;
+                    left: 50%;
+                    background-color: #000;
+                    padding: 50px;
                     @media (max-width:792px) {
-                        bottom: 100px;
-                        left: 40px;  
+                        bottom: 0%;
+                        left: 0%; 
+                        padding: 10px;
                     }
-                    font-size: 32px;
+                    font-size: 42px;
                     color: #fff;
                     text-transform: uppercase;
                     font-family: urbanist-semibold;
