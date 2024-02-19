@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MG-Architect</title>
+    <link rel="icon" type="image/x-icon" href="Images/mehul-logo-black.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -15,7 +17,8 @@
         <nav class="navbar navbar-expand-lg fixed-top scrolled">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/mehul-logo-white.png?updatedAt=1707729571025" alt="">
+                    <img src="https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/mehul-logo-white.png?updatedAt=1707729571025"
+                        alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +36,7 @@
                             <a class="nav-link mx-4" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-4" href="#projects">Projects</a>
+                            <a class="nav-link mx-4" href="projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-4" href="#contact">Contact</a>
@@ -89,7 +92,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-12 col-xl-4 py-2">
-                        <div class="col-box right" data-aos="fade-down" data-aos-delay="200" data-aos-duration="800">
+                        <div class="col-box right" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
                             <h1>WELCOME TO MEHUL GOYAL ARCHITECTS</h1>
                             <h3>Elevate Your Space with Timeless Elegance</h3>
                             <p>Architecture | Interiors | Landscape.</p>
@@ -141,18 +144,18 @@
             <div class="key-points">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-12 text-center">
-                            <span>100</span>
+                        <div class="col-lg-4 col-md-6 col-12 text-center" data-number="100">
+                            <span id="number1">50+</span>
                             <hr class="line">
                             <p>Clients Around the World</p>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 text-center">
-                            <span>200</span>
+                        <div class="col-lg-4 col-md-6 col-12 text-center" data-number="200">
+                            <span id="number2">200</span>
                             <hr class="line">
                             <p>Projects Completed</p>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 text-center">
-                            <span>244K</span>
+                        <div class="col-lg-4 col-md-6 col-12 text-center" data-number="244">
+                            <span id="number3">10K</span>
                             <hr class="line">
                             <p>Square Feet</p>
                         </div>
@@ -161,43 +164,37 @@
             </div>
         </section>
 
+
         <section class="servi" id="services">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 architect">
-                        <div class="col-box" data-aos="fade-down" data-aos-delay="200" data-aos-duration="800">
+                    <div class="col-12 architect" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+                        <div class="col-box">
                             <span>Architecture</span>
                         </div>
                     </div>
-                    <div class="col-12 interior">
+                    <div class="col-12 interior" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
                         <div class="col-box" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                             <span>Interior Design</span>
                         </div>
                     </div>
-                    <div class="col-12 landscape">
+                    <div class="col-12 landscape" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
                         <div class="col-box" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
                             <span>Landscape</span>
                         </div>
                     </div>
-                    <div class="col-12 management">
+                    <div class="col-12 management" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
                         <div class="col-box" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
                             <span>Turn Key Projects</span>
                         </div>
                     </div>
+                    <div class="col-12 construction" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+                        <div class="col-box" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                            <span>Construction</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-       
-
-        <section class="contact">
-            <div class="overlay"></div>
-            <h2>Have a Project in Mind?</h2>
-            <div class="contain">
-                <span class="text first-text">Do Not Hesitate to Say</span>
-                <span class="text sec-text"></span>
-            </div>
-            <button><a href="#contact">Let's Talk</a></button>
         </section>
 
         <section class="services" id="projects">
@@ -205,10 +202,12 @@
                 <div class="row">
                     <div class="col-lg-12 col-12">
                         <div class="row align-items-center">
-                            <div class="col-lg-10 col-12 my-2">
+                            <div class="col-lg-10 col-12 my-2" data-aos="fade-right" data-aos-delay="250"
+                                data-aos-duration="800">
                                 <h2>We specialize in these fields.</h2>
                             </div>
-                            <div class="col-lg-2 col-12 know my-2 justify-content-lg-end justify-content-start d-flex">
+                            <div class="col-lg-2 col-12 know my-2 justify-content-lg-end justify-content-start d-flex"
+                                data-aos="fade-left" data-aos-delay="250" data-aos-duration="800">
                                 <button><a href="#contact">Know More</a></button>
                             </div>
                         </div>
@@ -219,7 +218,7 @@
                             life.</p>
                     </div>
                     <div class="col-lg-12 col-12">
-                        <div class="img-accordion">
+                        <div class="img-accordion" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
                             <div class="img img1">
                                 <p> Architecture Residential </p>
                             </div>
@@ -235,6 +234,9 @@
                             <div class="img img5">
                                 <p> Theatre </p>
                             </div>
+                            <div class="img img6">
+                                <p>Construction</p>
+                            </div>
                         </div>
 
                     </div>
@@ -242,11 +244,23 @@
             </div>
         </section>
 
+
+        <section class="contact">
+            <div class="overlay"></div>
+            <h2 data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">Have a Project in Mind?</h2>
+            <div class="contain" data-aos="fade-right" data-aos-delay="250" data-aos-duration="800">
+                <span class="text first-text">Do Not Hesitate to Say</span>
+                <span class="text sec-text"></span>
+            </div>
+            <button><a href="#contact">Let's Talk</a></button>
+        </section>
+
         <section class="slider">
             <div class="overlay"></div>
             <div class="slider-container">
                 <div class="containero">
-                    <p class="loop-text">3D Visualisation &nbsp;&nbsp;&nbsp; Interior Design&nbsp;&nbsp;&nbsp; Architects</p>                   
+                    <p class="loop-text">3D Visualisation &nbsp;&nbsp;&nbsp; Interior Design&nbsp;&nbsp;&nbsp;
+                        Architect</p>
                 </div>
             </div>
         </section>
@@ -273,26 +287,53 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 my-2">
                         <h2>Location</h2>
-
+                        <iframe style="z-index: 10000;position: relative;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.0103391166103!2d75.7727219!3d26.871412600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5139f220983%3A0x1df650fe048bf78c!2sMehul%20Goyal%20Architects%20%7C%20Architecture%20and%20Interior%20Design%20Studio%20in%20Jaipur!5e0!3m2!1sen!2sin!4v1707825518304!5m2!1sen!2sin"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
         <section class="foot">
             <div class="container">
-                <h2>@2024 Mehul-Architect</h2>
+                <h2>@2024 Mehul-Goyal Architect</h2>
             </div>
         </section>
     </footer>
 
 
-    
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script id="rendered-js">
+        $.fn.jQuerySimpleCounter = function (options) {
+            var settings = $.extend({
+                start: 0,
+                end: 100,
+                easing: 'swing',
+                duration: 400,
+                complete: ''
+            },
+                options);
+            var thisElement = $(this);
+            $({ count: settings.start }).animate({ count: settings.end }, {
+                duration: settings.duration,
+                easing: settings.easing,
+                step: function () {
+                    var mathCount = Math.ceil(this.count);
+                    thisElement.text(mathCount);
+                },
+                complete: settings.complete
+            });
+        };
+        $('#number1').jQuerySimpleCounter({ end: 100, duration: 14000, delay: 6000 });
+        $('#number2').jQuerySimpleCounter({ end: 200, duration: 14000, delay: 6000 });
+        $('#number3').jQuerySimpleCounter({ end: 10000, duration: 18000, delay: 6000 });
+        // $('#number4').jQuerySimpleCounter({ end: 174021, duration: 2500 });
+    </script> -->
     <script type="text/javascript">
         const text = document.querySelector(".sec-text");
 

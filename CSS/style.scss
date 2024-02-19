@@ -34,34 +34,21 @@
     src: url(../Urbanist/Urbanist-Medium.ttf);
 }
 
-
-
-header.sticky nav {
-    background-color: #c5ad85 !important;
-    z-index: 300000 !important;
-}
-
-header img {
-    height: 60px;
-
-    @media (max-width:992px) {
-        height: 40px;
+header nav{
+    background-color: #1f3158;
+    img{
+        height: 55px;
+    }
+    a{
+        font-size: 20px;
+        color: #ffffff !important;
+        text-transform: uppercase;
+        font-family: urbanist-bold;
     }
 }
 
-header.sticky nav a {
-    color: #fff !important;
-    font-family: urbanist-semibold;
-    font-size: 17px;
-}
-
-header a {
-    color: #ffffff !important;
-    font-family: urbanist-semibold;
-    font-size: 17px;
-}
-
 .hero-section {
+    margin-top: 5rem;
     .slide {
         height: 650px;
         object-fit: cover;
@@ -92,7 +79,7 @@ header a {
                     position: absolute;
                     bottom: 40%;
                     left: 50%;
-                    background-color: #000;
+                    background-color: #1f3158;
                     padding: 50px;
                     font-size: 42px;
                     @media (max-width:792px) {
@@ -126,9 +113,6 @@ header a {
     overflow: hidden;
 
     .right {
-        // display: flex;
-        // justify-content: center;
-        // flex-direction: column;
         height: 100%;
         padding: 20px 0px;
     }
@@ -151,7 +135,7 @@ header a {
             }
 
             button {
-                background-color: #c5ad85;
+                background-color: #1f3158;
 
                 a {
                     color: #fff;
@@ -168,7 +152,7 @@ header a {
         margin: 0px 5px;
 
         button {
-            background: #c5ad85;
+            background: #1f3158;
             padding: 4px 22px;
             border: none;
             width: fit-content;
@@ -239,6 +223,14 @@ header a {
         background-position: center;
     }
 
+    .construction{
+        background:  url(../Images/construction.jpg);
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
     .col-box {
         height: 100%;
         display: flex;
@@ -249,6 +241,9 @@ header a {
         span {
             font-family: urbanist;
             font-size: 56px;
+            @media (max-width:666px) {
+                font-size: 42px;
+            }
             text-transform: uppercase;
             color: #ffffff !important;
         }
@@ -257,6 +252,7 @@ header a {
 
 
 .services {
+    overflow: hidden;
     padding-bottom: 40px;
 
     h2 {
@@ -283,7 +279,7 @@ header a {
         button {
             width: fit-content;
             height: fit-content;
-            background-color: #c5ad85;
+            background-color: #1f3158;
             color: #fff;
             padding: 20px 25px;
             border-radius: 100px;
@@ -352,11 +348,15 @@ header a {
         background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/theatre.png?updatedAt=1707729573827");
     }
 
+    .img6 {
+        background-image: url("../Images/flex-box.jpg");
+    }
+
     .img p {
         position: absolute;
         bottom: 0;
         left: 0;
-        background-color: #c5ad85;
+        background-color: #1f3158;
         padding: 10px;
         color: #fff;
         text-transform: uppercase;
@@ -382,7 +382,7 @@ header a {
 
     .img:hover p {
         transform: rotate(0);
-        background-color: #c5ad85;
+        background-color: #1f3158;
         border: 2px solid #222;
         color: #fff;
     }
@@ -408,20 +408,21 @@ header a {
         font-size: 20px;
         font-family: urbanist;
         font-weight: bold;
-        color: #c5ad85;
+        color: #1f3158;
         font-style: normal;
         line-height: 28px;
     }
 
     .line {
-        border: 1px solid #c5ad85 !important;
-        background-color: #c5ad85 !important;
-        color: #c5ad85 !important;
+        border: 1px solid #1f3158 !important;
+        background-color: #1f3158 !important;
+        color: #1f3158 !important;
         opacity: unset;
     }
 }
 
 .contact {
+    overflow: hidden;
     min-height: 365px;
     background-image: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact.jpg?updatedAt=1707729571086);
     background-position: center;
@@ -597,8 +598,25 @@ header a {
 
 }
 
+.banner{
+    margin-top: 5rem;
+    min-height: 300px;
+    background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/hero-section/banner.png?updatedAt=1707730130573);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 42px;
+        text-transform: uppercase;
+        font-family: urbanist-medium;
+        color: #fff;
+    }
+}
+
 .sub-foot {
-    padding: 100px 0px;
+    padding: 50px 0px;
     background-color: #ffffff;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .8)), url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact_bg.jpg?updatedAt=1707806137882);
     background-repeat: no-repeat;
