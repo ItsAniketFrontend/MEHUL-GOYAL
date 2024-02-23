@@ -36,6 +36,7 @@
 
 header nav{
     background-color: #1f3158;
+    z-index: 5000;
     img{
         height: 55px;
     }
@@ -115,6 +116,14 @@ header nav{
     .right {
         height: 100%;
         padding: 20px 0px;
+        h1{
+            color: #000;
+            font-size: 28;
+        }
+        h2{
+            color: #000;
+            font-size: 26px;
+        }
     }
 
     .left {
@@ -133,7 +142,6 @@ header nav{
                 color: #fff;
                 font-family: urbanist-medium;
             }
-
             button {
                 background-color: #1f3158;
 
@@ -179,11 +187,22 @@ header nav{
 
         p {
             font-family: urbanist;
-            font-size: 17px;
+            font-size: 20px;
             color: #0a0a0a;
             font-style: normal;
             text-transform: uppercase;
         }
+    }
+}
+
+.process{
+    overflow: hidden;
+    padding: 40px;
+    h3{
+        font-family: urbanist;
+    }
+    p{
+        font-family: jost;
     }
 }
 
@@ -424,7 +443,7 @@ header nav{
 .contact {
     overflow: hidden;
     min-height: 365px;
-    background-image: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact.jpg?updatedAt=1707729571086);
+    background-image: url(../Images/contact.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -450,7 +469,7 @@ header nav{
         font-style: normal;
         color: #fff;
         font-weight: 600;
-        z-index: 30000;
+        z-index: 3;
         text-align: center;
 
         @media (max-width:666px) {
@@ -459,7 +478,7 @@ header nav{
             font-style: normal;
             color: #fff;
             font-weight: 600;
-            z-index: 30000;
+            z-index: 200;
             padding: 0px 20px;
         }
     }
@@ -476,7 +495,7 @@ header nav{
             font-family: urbanist;
             font-size: 36px;
             color: #fff;
-            z-index: 90000;
+            z-index: 200;
             position: relative;
             font-style: normal;
         }
@@ -515,7 +534,7 @@ header nav{
         border-radius: 50px;
         background-color: transparent !important;
         border: 1px solid #fff;
-        z-index: 5000;
+        z-index: 200;
 
         a {
             text-decoration: none;
@@ -529,7 +548,7 @@ header nav{
 
 .slider {
     min-height: 350px;
-
+    overflow: hidden;
     @media (max-width:546px) {
         min-height: 250px;
     }
@@ -554,46 +573,75 @@ header nav{
         opacity: 0.77;
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     }
-
-    .slider-container {
-        width: 100%;
-        /* Adjust width as needed */
-        overflow: hidden;
-        .containero {
-            display: flex;
-            white-space: nowrap;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            font-family: sans-serif;
-         }
     
-    
-       .loop-text {
-        font-size: 88px;
+    h1 {
+        font-size: 150px;
+        text-transform: uppercase;
+        font-family: bebas-neu;
+    }
+    @media (max-width:666px) {
+        h1 {
+            font-size: 70px;
             text-transform: uppercase;
-            color: transparent;
-            -webkit-text-stroke: 3px;
-            -webkit-text-stroke-color: #fff;
-            white-space: nowrap;
-            padding: 0 6rem;
-            letter-spacing: 1px;
-        }
-     .loop-text {
-            animation: loopText 10s infinite linear;      
+            font-family: bebas-neu;
+        } 
+    }
+    
+    .wrapper-titles {
+        overflow: hidden;
+      display: grid;
+      place-items: center;
+    }
+    
+    .m-scroll {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 130px;
+        margin: auto;
+        z-index: 1;
+    }
+    
+    .m-scroll-title {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        white-space: nowrap;
+        transition: all 1s ease;
+    }
+    
+    .m-scroll-title div {
+        display: flex;
+        animation: scrollText 19s infinite linear; /* cambiar animation duration */
+    }
+    
+    .m-scroll-title h1 {
+        margin: 0 0 0 .3em;
+        color: transparent;
+    }
+    
+    .m-scroll-title h1:not(.m-scroll-title-span) {
+        color: #ffff;
+    }
+    
+    .m-scroll-title-span {
+        color: #ffff;
+    }
+    
+    
+    @keyframes scrollText {
+        from {
+            transform: translateX(0%);
         }
     
-        @keyframes loopText {
-            from {
-                transform: translateX(0);
-             }
-     
-            to {
-                transform: translateX(-100%);
-     }
-     
-     }
-    
+        to {
+            transform: translateX(-50%);
+        }
     }
 
 }
@@ -696,16 +744,19 @@ header nav{
         text-decoration: none;
         color: #fff;
         font-family: jost;
-        font-size: 18px;
+        font-size: 14px;
         text-transform: capitalize;
         font-weight: 400;
-
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
         span {
             color: #fff;
             font-family: jost;
             font-size: 18px;
-            text-transform: capitalize;
-            padding-right: 14px;
+            text-transform: uppercase;
+            padding-right: 8px;
         }
     }
 }

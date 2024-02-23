@@ -30,6 +30,7 @@
 }
 header nav {
   background-color: #1f3158;
+  z-index: 5000;
 }
 header nav img {
   height: 55px;
@@ -109,6 +110,14 @@ header nav a {
   height: 100%;
   padding: 20px 0px;
 }
+.about .right h1 {
+  color: #000;
+  font-size: 28;
+}
+.about .right h2 {
+  color: #000;
+  font-size: 26px;
+}
 .about .left {
   height: 100%;
 }
@@ -162,10 +171,21 @@ header nav a {
 }
 .about .col-box p {
   font-family: urbanist;
-  font-size: 17px;
+  font-size: 20px;
   color: #0a0a0a;
   font-style: normal;
   text-transform: uppercase;
+}
+
+.process {
+  overflow: hidden;
+  padding: 40px;
+}
+.process h3 {
+  font-family: urbanist;
+}
+.process p {
+  font-family: jost;
 }
 
 .servi {
@@ -381,7 +401,7 @@ header nav a {
 .contact {
   overflow: hidden;
   min-height: 365px;
-  background-image: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/contact.jpg?updatedAt=1707729571086);
+  background-image: url(../Images/contact.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -406,7 +426,7 @@ header nav a {
   font-style: normal;
   color: #fff;
   font-weight: 600;
-  z-index: 30000;
+  z-index: 3;
   text-align: center;
 }
 @media (max-width: 666px) {
@@ -416,7 +436,7 @@ header nav a {
     font-style: normal;
     color: #fff;
     font-weight: 600;
-    z-index: 30000;
+    z-index: 200;
     padding: 0px 20px;
   }
 }
@@ -431,7 +451,7 @@ header nav a {
   font-family: urbanist;
   font-size: 36px;
   color: #fff;
-  z-index: 90000;
+  z-index: 200;
   position: relative;
   font-style: normal;
 }
@@ -462,7 +482,7 @@ header nav a {
   border-radius: 50px;
   background-color: transparent !important;
   border: 1px solid #fff;
-  z-index: 5000;
+  z-index: 200;
 }
 .contact button a {
   text-decoration: none;
@@ -474,6 +494,7 @@ header nav a {
 
 .slider {
   min-height: 350px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -499,38 +520,63 @@ header nav a {
   opacity: 0.77;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
-.slider .slider-container {
-  width: 100%;
-  /* Adjust width as needed */
-  overflow: hidden;
+.slider h1 {
+  font-size: 150px;
+  text-transform: uppercase;
+  font-family: bebas-neu;
 }
-.slider .slider-container .containero {
+@media (max-width: 666px) {
+  .slider h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: bebas-neu;
+  }
+}
+.slider .wrapper-titles {
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.slider .m-scroll {
   display: flex;
-  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  height: 130px;
+  margin: auto;
+  z-index: 1;
+}
+.slider .m-scroll-title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  font-family: sans-serif;
-}
-.slider .slider-container .loop-text {
-  font-size: 88px;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 3px;
-  -webkit-text-stroke-color: #fff;
   white-space: nowrap;
-  padding: 0 6rem;
-  letter-spacing: 1px;
+  transition: all 1s ease;
 }
-.slider .slider-container .loop-text {
-  animation: loopText 10s infinite linear;
+.slider .m-scroll-title div {
+  display: flex;
+  animation: scrollText 19s infinite linear; /* cambiar animation duration */
 }
-@keyframes loopText {
+.slider .m-scroll-title h1 {
+  margin: 0 0 0 0.3em;
+  color: transparent;
+}
+.slider .m-scroll-title h1:not(.m-scroll-title-span) {
+  color: white;
+}
+.slider .m-scroll-title-span {
+  color: white;
+}
+@keyframes scrollText {
   from {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -628,16 +674,20 @@ header nav a {
   text-decoration: none;
   color: #fff;
   font-family: jost;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: capitalize;
   font-weight: 400;
+}
+.sub-foot p a {
+  text-decoration: none;
+  color: #fff;
 }
 .sub-foot p span {
   color: #fff;
   font-family: jost;
   font-size: 18px;
-  text-transform: capitalize;
-  padding-right: 14px;
+  text-transform: uppercase;
+  padding-right: 8px;
 }
 
 .foot {
