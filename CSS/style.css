@@ -110,13 +110,20 @@ header nav a {
   height: 100%;
   padding: 20px 0px;
 }
-.about .right h1 {
-  color: #000;
-  font-size: 28;
-}
 .about .right h2 {
-  color: #000;
-  font-size: 26px;
+  font-size: 28px;
+  font-family: urbanist-bold;
+}
+.about .right p {
+  font-family: jost;
+  text-transform: uppercase;
+}
+.about .right h6 {
+  font-family: jost;
+}
+.about .right h3 {
+  font-family: jost;
+  font-size: 20px;
 }
 .about .left {
   height: 100%;
@@ -145,6 +152,7 @@ header nav a {
 }
 .about .col-box {
   margin: 0px 5px;
+  height: 100%;
 }
 .about .col-box button {
   background: #1f3158;
@@ -159,27 +167,19 @@ header nav a {
   color: #fff;
   text-decoration: none;
 }
-.about .col-box h1 {
-  font-family: urbanist-bold;
-  font-size: 32px;
-  text-transform: uppercase;
-  color: #0a0a0a;
-}
-.about .col-box h3 {
-  font-family: urbanist-medium;
-  font-size: 24px;
-}
-.about .col-box p {
-  font-family: urbanist;
-  font-size: 20px;
-  color: #0a0a0a;
-  font-style: normal;
-  text-transform: uppercase;
-}
 
 .process {
   overflow: hidden;
   padding: 40px;
+}
+.process h2 {
+  text-align: center;
+  font-family: urbanist;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 42px;
+  font-weight: 700;
+  padding-bottom: 5px;
 }
 .process h3 {
   font-family: urbanist;
@@ -193,28 +193,28 @@ header nav a {
   padding: 0px 0px;
 }
 .servi .architect {
-  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/architect.jpg?updatedAt=1707804013781);
+  background: url(../Images/architect.jpg);
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .servi .interior {
-  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/interior-design.jpg?updatedAt=1707804013394);
+  background: url(../Images/interior-design.jpg);
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .servi .landscape {
-  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/landscape.jpg?updatedAt=1707804013759);
+  background: url(../Images/landscape.jpg);
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .servi .management {
-  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/project-management.jpg?updatedAt=1707804013058);
+  background: url(../Images/project-management.jpg);
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -320,19 +320,19 @@ header nav a {
   }
 }
 .services .img1 {
-  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/Architecture-commercial.png?updatedAt=1707736955996");
+  background-image: url(../Images/TV-unit.png);
 }
 .services .img2 {
-  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/hotel.png?updatedAt=1707739196822");
+  background-image: url(../Images/resort.png);
 }
 .services .img3 {
-  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/interior-residential.png?updatedAt=1707739333998");
+  background-image: url(../Images/room.png);
 }
 .services .img4 {
-  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/Library.png?updatedAt=1707729573802");
+  background-image: url(../Images/Library.png);
 }
 .services .img5 {
-  background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/theatre.png?updatedAt=1707729573827");
+  background-image: url(../Images/theatre.png);
 }
 .services .img6 {
   background-image: url("../Images/flex-box.jpg");
@@ -501,7 +501,7 @@ header nav a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/service-3d.jpg?updatedAt=1707800455355);
+  background: url(../Images/service-3d.jpg);
   position: relative;
 }
 @media (max-width: 546px) {
@@ -599,8 +599,8 @@ header nav a {
 }
 .banner p {
   color: #fff;
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 200;
   font-family: jost;
 }
 .banner p span {
@@ -624,7 +624,7 @@ header nav a {
   color: #222;
 }
 .projec button {
-  background-color: #d0b46f;
+  background-color: #1f3158;
   padding: 5px 19px;
   width: -moz-fit-content;
   width: fit-content;
@@ -642,6 +642,16 @@ header nav a {
 .projec .col-lg-6 img {
   animation: imagezoom 20s;
 }
+.projec .commerc {
+  height: 420px;
+}
+.projec .commerc img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .sub-foot {
   padding: 20px 0px;
@@ -657,6 +667,11 @@ header nav a {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 800;
+}
+@media (max-width: 556px) {
+  .sub-foot h2 {
+    font-size: 34px;
+  }
 }
 .sub-foot li {
   list-style: none;

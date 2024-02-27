@@ -116,13 +116,20 @@ header nav{
     .right {
         height: 100%;
         padding: 20px 0px;
-        h1{
-            color: #000;
-            font-size: 28;
-        }
         h2{
-            color: #000;
-            font-size: 26px;
+            font-size: 28px;
+            font-family: urbanist-bold;
+        }
+        p{
+            font-family: jost;
+            text-transform: uppercase;
+        }
+        h6{
+            font-family: jost;
+        }
+        h3{
+            font-family: jost;
+            font-size: 20px;
         }
     }
 
@@ -158,7 +165,7 @@ header nav{
 
     .col-box {
         margin: 0px 5px;
-
+        height: 100%;
         button {
             background: #1f3158;
             padding: 4px 22px;
@@ -173,31 +180,41 @@ header nav{
             }
         }
 
-        h1 {
-            font-family: urbanist-bold;
-            font-size: 32px;
-            text-transform: uppercase;
-            color: #0a0a0a;
-        }
+        // h1 {
+        //     font-family: urbanist-bold;
+        //     font-size: 32px;
+        //     text-transform: uppercase;
+        //     color: #0a0a0a;
+        // }
 
-        h3 {
-            font-family: urbanist-medium;
-            font-size: 24px;
-        }
+        // h3 {
+        //     font-family: urbanist-medium;
+        //     font-size: 20px;
+        //     color: #1c1c1c;
+        // }
 
-        p {
-            font-family: urbanist;
-            font-size: 20px;
-            color: #0a0a0a;
-            font-style: normal;
-            text-transform: uppercase;
-        }
+        // p {
+        //     font-family: urbanist;
+        //     font-size: 20px;
+        //     color: #0a0a0a;
+        //     font-style: normal;
+        //     text-transform: uppercase;
+        // }
     }
 }
 
 .process{
     overflow: hidden;
     padding: 40px;
+    h2{
+        text-align: center;
+        font-family: urbanist;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        font-size: 42px;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
     h3{
         font-family: urbanist;
     }
@@ -211,7 +228,7 @@ header nav{
     padding: 0px 0px;
 
     .architect {
-        background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/architect.jpg?updatedAt=1707804013781);
+        background: url(../Images/architect.jpg);
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -219,7 +236,7 @@ header nav{
     }
 
     .interior {
-        background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/interior-design.jpg?updatedAt=1707804013394);
+        background: url(../Images/interior-design.jpg);
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -227,7 +244,7 @@ header nav{
     }
 
     .landscape {
-        background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/landscape.jpg?updatedAt=1707804013759);
+        background: url(../Images/landscape.jpg);
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -235,7 +252,7 @@ header nav{
     }
 
     .management {
-        background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/project-management.jpg?updatedAt=1707804013058);
+        background: url(../Images/project-management.jpg);
         height: 350px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -348,23 +365,23 @@ header nav{
     }
 
     .img1 {
-        background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/Architecture-commercial.png?updatedAt=1707736955996");
+        background-image: url(../Images/TV-unit.png);
     }
 
     .img2 {
-        background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/hotel.png?updatedAt=1707739196822");
+        background-image: url(../Images/resort.png);
     }
 
     .img3 {
-        background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/interior-residential.png?updatedAt=1707739333998");
+        background-image: url(../Images/room.png);
     }
 
     .img4 {
-        background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/Library.png?updatedAt=1707729573802");
+        background-image: url(../Images/Library.png);
     }
 
     .img5 {
-        background-image: url("https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/theatre.png?updatedAt=1707729573827");
+        background-image: url(../Images/theatre.png);
     }
 
     .img6 {
@@ -559,7 +576,7 @@ header nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url(https://ik.imagekit.io/pzinkx5cs/Mehul-Goyal/service-3d.jpg?updatedAt=1707800455355);
+    background: url(../Images/service-3d.jpg);
     position: relative;
 
     .overlay {
@@ -664,8 +681,8 @@ header nav{
     }
     p{
         color: #fff;
-        font-size: 26px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 200;
         font-family: jost;
         span{
             color: #d2b777;
@@ -689,7 +706,7 @@ header nav{
         color: #222;
     }
     button{
-        background-color: #d0b46f;
+        background-color: #1f3158;
         padding: 5px 19px;
         width: fit-content;
         border: none;
@@ -704,6 +721,15 @@ header nav{
         overflow: hidden;
         img{
             animation: imagezoom 20s;
+        }
+    }
+    .commerc{
+        height: 420px;
+        img{
+            height: 100%;
+            width: 100%;
+            aspect-ratio: 1/2;
+            object-fit: cover;
         }
     }
    
@@ -724,6 +750,9 @@ header nav{
         text-transform: uppercase;
         font-size: 40px;
         font-weight: 800;
+        @media (max-width:556px) {
+            font-size: 34px;
+        }
     }
 
     li {
